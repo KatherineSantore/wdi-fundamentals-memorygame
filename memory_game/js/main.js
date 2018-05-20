@@ -33,6 +33,7 @@ alert("You found a match!"); }
  else {
 alert("Sorry, try again."); }
 }; 
+};
 
 var flipCard = function(){
 var cardId = this.getAttribute('data-id');
