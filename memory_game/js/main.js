@@ -26,18 +26,17 @@ var cardsInPlay = [];
 
 
 var checkForMatch = function(){
-cards.setAttribute('src', cards[cardId].cardImage);
-if (cardsInPlay[0] === cardsInPlay[1]) {
-alert("You found a match!"); } {
+//cards.setAttribute('src', cards[cardId].cardImage);
+if (cardsInPlay.length > 1 && cardsInPlay[0] === cardsInPlay[1]){
+alert("You found a match!"); } 
  else {
-}
-alert("Sorry, try again.");
+alert("Sorry, try again."); }
 }; 
 
 var flipCard = function(){
 var cardId = this.getAttribute('data-id');
 this.setAttribute('src', cards[cardId].cardImage);
-console.log("User flipped " + card[cardId].rank);
+console.log("User flipped " + cards[cardId].rank);
 cardsInPlay.push(cards[cardId].rank);
 console.log(cards[cardId].suit);
 console.log(cards[cardId].cardImage);
